@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4-lines</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <article class="circular">
+    <section class="percent">
+      <div class="dot"></div>
+      <svg>
+        <circle cx="70" cy="70" r="70" class="inside"></circle>
+        <circle cx="70" cy="70" r="70" class="inside"></circle>
+      </svg>
+      <h2 class="number">0<p>%</p>
+      </h2>
+    </section>
+  </article>
+
+  <div class="container">
+
+    <header class="header">
+      <nav>
+        <a href="https://manuhollmann.github.io/interfaces/Entrega%204/" class="menu-item clic-item"><img
+            src="./sources/logo.png" alt="Logo de la pagina"></a>
+        <div class="bars__menu clic-item" id="hamburger">
+          <span class="line1__bars-menu"></span>
+          <span class="line2__bars-menu"></span>
+          <span class="line3__bars-menu"></span>
+        </div>
+        <input type="text" placeholder="Buscar...">
+        <img src="./sources/Icons/search-icon.png" alt="Search icon" class="search-icon clic-item">
+      </nav>
+    </header>
+
+    <nav class="container-menu">
+      <div class="nav-show" id="profile">
+        <img src="./sources/Icons/account.svg" alt="Icono de perfil">
+        <span>Perfil</span>
+      </div>
+      <div class="nav-show" id="favorites">
+        <img src="./sources/Icons/Gamepad.svg" alt="Icono de favoritos">
+        <span>Favoritos</span>
+      </div>
+      <div class="item--show nav-show" id="categories">
+        <img src="./sources/Icons/darhboard.svg" alt="Icono de categorias">
+        <span>Categorias</span>
+        <ul>
+          <li><a href="https://manuhollmann.github.io/interfaces/Entrega%204/">Ultimos jugados</a></li>
+          <li>
+            <a href="https://manuhollmann.github.io/interfaces/Entrega%204/">Recomendados</a>
+          </li>
+          <li>
+            <a href="https://manuhollmann.github.io/interfaces/Entrega%204/">Accion</a>
+          </li>
+          <li>
+            <a href="https://manuhollmann.github.io/interfaces/Entrega%204/">Deporte</a>
+          </li>
+          <li>
+            <a href="https://manuhollmann.github.io/interfaces/Entrega%204/">RPG</a>
+          </li>
+        </ul>
+      </div>
+      <div class="item--show nav-show" id="social-networks">
+        <img src="./sources/Icons/Subtract.svg" alt="Icono de redes sociales">
+        <span> Redes</span>
+        <ul>
+          <li id="1"><img src="./sources/Icons/twitter.svg" alt="Icono de Twitter" width="30"
+              height="40"><span>Twitter</span></li>
+          <li id="2"><img src="./sources/Icons/instagram.svg" alt="Icono de Instagram" width="30" height="40">
+            <span>Instagram</span>
+          </li>
+          <li id="3"><img src="./sources/Icons/facebook.svg" alt="Icono de Facebook" width="20"
+              height="30"><span>Facebook</span></li>
+          <li id="4"><img src="./sources/Icons/youtube.svg" alt="Icono de Youtube" width="30"
+              height="40"><span>Youtube</span></li>
+        </ul>
+      </div>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <div class="breadcrumbs">
+      <a href="https://manuhollmann.github.io/interfaces/Entrega%204/"><img src="./sources/Icons/house-icon.png"
+          alt="house icon" class="clic-item"></img></a>
+      <p>
+      <p class="bars">\</p> <a href="https://manuhollmann.github.io/interfaces/Entrega%204//"><span
+          class="visited linkss">Ultimos
+          jugados</span></a>
+      <p class="bars">\</p class="linkss"> Conecta Espacial 4</p>
+    </div>
+    <h1 id="winnerText"></h1>
+    <h3 id="countdown"></h3>
+    <article class="game-container">
+      <canvas class="canvas" id="canvas" width="1200" height="550"></canvas>
+      <div class="canvas-container"></div>
+      <div class="change-connect4">
+        <h1 class="btnChange" id="title-game-menu">Conecta Espacial 4</h1>
+        <b class="btnChange" id="text-game-menu">El momento esperado ha llegado, los alienígenas han entrado en el
+          sistema
+          solar y se dirigen a
+          la Tierra.
+          Pero no todo
+          está perdido, los astronautas volarán al espacio para enfrentarlos. Participa en esta batalla por el
+          espacio,
+          únete al
+          bando Alienígena o Astronauta y navega por las estrellas usando la estrategia para vencer a tu oponente.</b>
+        <button class="btn btnChange" data-number='4' id="changeToConnect4">Jugar 4 en linea</button>
+        <button class="btn btnChange" data-number='5' id="changeToConnect5">Jugar 5 en linea</button>
+        <button class="btn btnChange" data-number='6' id="changeToConnect6">Jugar 6 en linea</button>
+        <button class="btn btnChange" data-number='7' id="changeToConnect7">Jugar 7 en linea</button>
+        <button class="btn btnOption" data-number='1' disabled id="option1">Conjunto de fichas 1</button>
+        <img src="./sources/connect4/astronautChipImg.png" width="50" class="btnOption chipsOp1-1">
+        <img src="./sources/connect4/alienChipImg.png" width="50" class="btnOption chipsOp1-2">
+        <button class="btn btnOption" data-number='2' disabled id="option2">Conjunto de fichas 2</button>
+        <img src="./sources/connect4/alien.png" width="50" class="btnOption chipsOp2-1">
+        <img src="./sources/connect4/rocket.png" width="50" class="btnOption chipsOp2-2">
+        <button class="btn btnOption" data-number='3' disabled id="option3">Conjunto de fichas 3</button>
+        <img src="./sources/connect4/space-ship.png" width="50" class="btnOption chipsOp3-1">
+        <img src="./sources/connect4/astronautChip.png" width="50" class="btnOption chipsOp3-2">
+      </div>
+      <button id="restart-button" class="btn">Reiniciar</button>
+
+
+      <img src="./sources/connect4/arrow-down.svg" width="50" id="insertImg" class="canvas-icon">
+      <img src="./sources/connect4/astronautChipImg.png" width="50" id="astronautChipImg" class="canvas-icon">
+      <img src="./sources/connect4/alienChipImg.png" width="50" id="alienChipImg" class="canvas-icon">
+      <img src="./sources/connect4/alien.png" width="50" id="alienChipImg2" class="canvas-icon">
+      <img src="./sources/connect4/rocket.png" width="50" id="astronautChipImg2" class="canvas-icon">
+      <img src="./sources/connect4/space-ship.png" width="50" id="alienChipImg3" class="canvas-icon">
+      <img src="./sources/connect4/astronautChip.png" width="50" id="astronautChipImg3" class="canvas-icon">
+      <img src="./sources/connect4/game-background.jpg" id="backgroundImg" class="canvas-icon">
+      <img src="./sources/connect4/game-table.jpg" id="tableImg" class="canvas-icon">
+
+    </article>
+    <section class="game-info-container">
+      <div class="game-instructions-container">
+        <div class="section-title">
+          <img src="./sources/Icons/game-section-icon.png" alt="controller icon">
+          <h3>Instrucciones del juego</h3>
+        </div>
+        <div class="game-content-info">
+          <div>
+            <p>Juegas usando tu teclado:</p>
+          </div>
+          <br>
+          <div class="instructions">
+            <p>Túrnense dejando caer fichas en las columnas para obtener cuatro en una fila. Para colocar una ficha,
+              cambia
+              entre
+              columnas del tablero con las flechas y presiona espacio para soltar la ficha en la columna. <span
+                class="text-highlight">Conecta 4
+                piezas
+                horizontal,
+                vertical o diagonalmente para ganar el partido</span>. Puedes jugar contra la computadora o un amigo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-share-container">
+        <div class="section-title">
+          <img src="./sources/Icons/game-section-icon.png" alt="controller icon">
+          <h3>Comparte el juego en tus redes!</h3>
+        </div>
+        <div class="game-content-info share-icons">
+          <img src="./sources/Icons/twitter-logo.png" alt="twitter logo" class="clic-item">
+          <img src="./sources/Icons/facebook-logo.png" alt="facebook logo" class="clic-item">
+          <img src="./sources/Icons/instagram-logo.png" alt="instagram logo" class="clic-item">
+        </div>
+      </div>
+      <div class="game-images-container">
+        <div class="section-title">
+          <img src="./sources/Icons/game-section-icon.png" alt="controller icon">
+          <h3>Imagenes</h3>
+        </div>
+        <div class="game-content-info">
+          <ul class="slider-gallery">
+            <img id="slide1" src="./sources/4-lines-img1.png" alt="4-lines-img1">
+            <img id="slide2" src="./sources/4-lines-img2.png" alt="4-lines-img2">
+            <img id="slide3" src="./sources/4-lines-img3.png" alt="4-lines-img3">
+            <img id="slide4" src="./sources/4-lines-img4.png" alt="4-lines-img4">
+          </ul>
+
+          <nav class="nav-gallery">
+            <ul class="menu-gallery">
+              <li><a href="#slide1">1</a></li>
+              <li><a href="#slide2">2</a></li>
+              <li><a href="#slide3">3</a></li>
+              <li><a href="#slide4">4</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+      <div class="game-video-container">
+        <div class="section-title">
+          <img src="./sources/Icons/game-section-icon.png" alt="controller icon">
+          <h3>Video tutorial</h3>
+        </div>
+        <div class="game-content-info">
+          <iframe width="700" height="815" src="https://www.youtube.com/embed/M2nWXNrmKRA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="game-community-container">
+      <div class="section-title">
+        <img src="./sources/Icons/community-icon.png" alt="community icon">
+        <h3>Comunidad</h3>
+      </div>
+      <br>
+      <div>
+        <div class="add-comment">
+          <img src="./sources/user-logo-2.png" alt="user logo 2">
+          <input type="text" placeholder="Agregar comentario...">
+        </div>
+        <div class="add-comment-btn">
+          <button class="btn">Enviar</button>
+          <button class="btn-cancel btn">Cancelar</button>
+        </div>
+      </div>
+      <div class="comments">
+        <div class="comment-container">
+          <div class="comment-logo">
+            <img src="./sources/user-logo.png" alt="user-logo">
+          </div>
+          <div class="comment-content">
+            <div class="comment-title">
+              <b>Alexis</b>
+            </div>
+            <p>Buen juego, la historia esta buena y la jugabilidad tambien, aunque es medio facil y corto.</p>
+            <div class="comment-icons">
+              <img src="./sources/Icons/heart-icon.png" alt="heart icon" class="clic-item">
+              <p>18</p>
+              <img src="./sources/Icons/reply-icon.png" alt="reply icon" class="clic-item">
+              <p>Responder</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment-container">
+          <div class="comment-logo">
+            <img src="./sources/user-logo.png" alt="user-logo">
+          </div>
+          <div class="comment-content">
+            <div class="comment-title">
+              <b>Pedro</b>
+            </div>
+            <p>Mal juego, aburrido.</p>
+            <div class="comment-icons">
+              <img src="./sources/Icons/heart-icon.png" alt="heart icon" class="clic-item">
+              <p>1</p>
+              <img src="./sources/Icons/reply-icon.png" alt="reply icon" class="clic-item">
+              <p>Responder</p>
+            </div>
+            <div class="comment-icons">
+              <img src="./sources/Icons/close-comments-icon.png" alt="close-commments-icon">
+              <p class="comment-link linkss">comentarios</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment-container comment-response">
+          <div class="comment-logo">
+            <img src="./sources/user-logo.png" alt="user-logo">
+          </div>
+          <div class="comment-content">
+            <div class="comment-title">
+              <b>Jorge</b>
+            </div>
+            <p>A mi si me gusto.</p>
+            <div class="comment-icons">
+              <img src="./sources/Icons/heart-icon.png" alt="heart icon" class="clic-item">
+              <p>0</p>
+              <img src="./sources/Icons/reply-icon.png" alt="reply icon" class="clic-item">
+              <p>Responder</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment-container">
+          <div class="comment-logo">
+            <img src="./sources/user-logo.png" alt="user-logo">
+          </div>
+          <div class="comment-content">
+            <div class="comment-title">
+              <b>Francisco</b>
+            </div>
+            <p>Bastante entretenido.</p>
+            <div class="comment-icons">
+              <img src="./sources/Icons/heart-icon.png" alt="heart icon" class="clic-item">
+              <p>10</p>
+              <img src="./sources/Icons/reply-icon.png" alt="reply icon" class="clic-item">
+              <p>Responder</p>
+            </div>
+            <div class="comment-icons">
+              <img src="./sources/Icons/open-comments-icon.png" alt="close-commments-icon">
+              <p class="comment-link linkss">comentarios</p>
+            </div>
+          </div>
+        </div>
+        <div class="see-more-comments">
+          <button class="btn">Ver mas comentarios</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="fat-footer">
+        <div class="news">
+          <b>Obten actualizaciones de tus juegos favoritos</b>
+          <div class="first-section-footer">
+            <p>Listo para explorar?</p>
+            <button class="btn">Suscribite</button>
+          </div>
+          <div class="first-section-footer ps-footer">
+            <p>Terminos & Condiciones</p>
+            <p class="p-footer">Política de privacidad</p>
+          </div>
+        </div>
+        <div>
+          <b>Ranking</b>
+          <p>Destacados</p>
+          <p>Novedades</p>
+          <p>Torneos</p>
+          <p>Offline</p>
+        </div>
+        <div>
+          <b>Servicios</b>
+          <p>Nuestra tienda</p>
+          <p>Novedades</p>
+          <p>Suscripciones</p>
+          <p>Offline</p>
+        </div>
+        <div>
+          <b>Nosotros</b>
+          <p>Beneficios</p>
+          <p>Equipo</p>
+          <p>Projectos</p>
+        </div>
+        <div>
+          <b>Ayuda</b>
+          <p>FAQs</p>
+          <p>Contacto</p>
+        </div>
+      </div>
+      <div class="social-networks">
+        <img src="./sources/Icons/facebook-small-logo.png" alt="facebook logo" class="clic-item">
+        <img src="./sources/Icons/twitter-small-logo.png" alt="twitter logo" class="clic-item">
+        <img src="./sources/Icons/instagram-small-logo.png" alt="instagram logo" class="clic-item">
+      </div>
+      <p class="last-text-footer">Copyright 2022</p>
+    </footer>
+  </div>
+  <script src="js/hamburger.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/chip.js"></script>
+  <script src="js/insertArrow.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/connect4.js"></script>
+
+</body>
+
+</html>

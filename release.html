@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/release.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>interfaces</title>
+</head>
+
+<body>
+
+    <article class="circular">
+        <section class="percent">
+            <div class="dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70" class="inside"></circle>
+                <circle cx="70" cy="70" r="70" class="inside"></circle>
+            </svg>
+            <h2 class="number">0<p>%</p>
+            </h2>
+        </section>
+    </article>
+
+    <div class="container">
+        <header class="header">
+            <nav>
+                <!-- Menu hamburguesa -->
+                <div class="bars__menu clic-item" id="hamburger">
+                    <span class="line1__bars-menu"></span>
+                    <span class="line2__bars-menu"></span>
+                    <span class="line3__bars-menu"></span>
+                </div>
+                <!-- Logo de la pagina -->
+                <a href="https://manuhollmann.github.io/interfaces/Entrega%204/" id="sticky_logo"><img
+                        src="./sources/logo2.png" alt="Logo de la pagina" id="nav-logo" width="50%"
+                        class="nav-item"></a>
+            </nav>
+            <nav class="container-menu">
+                <!-- Perfil -->
+                <div class="nav-show" id="profile">
+                    <img src="./sources/Icons/account.svg" alt="Icono de perfil">
+                    <span>Perfil</span>
+                </div>
+                <!-- Seccion de favoritos -->
+                <div class="nav-show" id="favorites">
+                    <img src="./sources/Icons/Gamepad.svg" alt="Icono de favoritos">
+                    <span>Favoritos</span>
+                </div>
+                <!-- Categorias de carruseles -->
+                <div class="item--show nav-show" id="categories">
+                    <img src="./sources/Icons/darhboard.svg" alt="Icono de categorias">
+                    <span>Secciones</span>
+                    <ul>
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li>
+                            <p><a href="#gameplay" class="nav-link">Gameplay</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#habilidades" class="nav-link">Habilidades</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#personajes" class="nav-link">Personajes</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#historia" class="nav-link">Historia</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#trailer" class="nav-link">Trailer</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Seccion de redes sociales -->
+                <div class="item--show nav-show" id="social-networks">
+                    <img src="./sources/Icons/Subtract.svg" alt="Icono de redes sociales">
+                    <span> Redes</span>
+                    <ul>
+                        <li id="1"><img src="./sources/Icons/twitter.svg" alt="Icono de Twitter" width="30"
+                                height="40"><span>Twitter</span></li>
+                        <li id="2"><img src="./sources/Icons/instagram.svg" alt="Icono de Instagram" width="30"
+                                height="40">
+                            <span>Instagram</span>
+                        </li>
+                        <li id="3"><img src="./sources/Icons/facebook.svg" alt="Icono de Facebook" width="20"
+                                height="30"><span>Facebook</span></li>
+                        <li id="4"><img src="./sources/Icons/youtube.svg" alt="Icono de Youtube" width="30"
+                                height="40"><span>Youtube</span></li>
+                    </ul>
+                </div>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <!-- Icono parallax -->
+        <div class="parallax">
+            <div class="hero">
+                <img class="logo" src="./sources/logo_main.png" id="logo-hero" alt="Logo del juego" data-speed="100">
+                <button class="animated button"> <strong>Precompra hoy!</strong> </button>
+            </div>
+            <img src="./sources/background-hero2.png" alt="background-hero2" id="floor-img">
+            <img src="./sources/character.png" alt="knight" id="character-img" class="parallax-img" data-speed="120">
+        </div>
+        <div>
+            <h1>Deciende a la oscuridad</h1>
+            <div id="background-spritesheet">
+                <div id="knight"></div>
+            </div>
+            <section>
+                <img class="gameSectionA" src="./sources/mines.jfif" alt="las minas">
+                <article class="gameSectionB">
+                    <h3>Afronta las profundidades de un reino olvidado</h3>
+                    <p>Debajo de la ciudad de Dirtmouth, que se desvanece, duerme un vasto y antiguo reino. Muchos se
+                        ven arrastrados bajo la superficie, en busca de riquezas, de gloria o de respuestas a viejos
+                        secretos.</p>
+                    <p>Como el enigmático Caballero, atravesarás las profundidades, desentrañarás sus misterios y
+                        vencerás sus males.</p>
+                </article>
+            </section>
+
+            <section>
+                <article class="gameSectionA" id="typeBArticle">
+                    <h3>Usa tus habilidades y reflejos para sobrevivir</h3>
+                    <p>Hollow Knight es una desafiante aventura de acción en 2D. Explorarás cavernas retorcidas,
+                        lucharás contra criaturas contaminadas y escaparás de intrincadas trampas, todo ello para
+                        resolver un antiguo misterio oculto durante mucho tiempo.</p>
+                    <ul>
+                        <li>Explora vastos mundos interconectados</li>
+                        <li>Encuentra una extraña colección de amigos y enemigos.</li>
+                        <li>Evoluciona con nuevas y poderosas habilidades</li>
+                    </ul>
+                </article>
+                <img class="gameSectionB" src="./sources/false_knigth.jfif" alt="lucha contra el falso caballero">
+            </section>
+
+            <section>
+                <img class="gameSectionA" src="./sources/lake_of_unn.jfif" alt="lago de unn">
+                <article class="gameSectionB">
+                    <h3>Arte casi como dibujado a mano</h3>
+                    <p>El mundo de Hollow Knight cobra vida con detalles vívidos y sombríos, y sus cavernas están llenas
+                        de criaturas extrañas y aterradoras, animadas a mano en un estilo 2D tradicional.</p>
+                    <p>Cada nueva zona que descubrirás es única y extraña, y está repleta de nuevas criaturas y
+                        personajes que descubrir. Merece la pena explorar el mundo de Hollow Knight solo para contemplar
+                        las vistas y descubrir nuevas maravillas escondidas fuera de los caminos trillados.</p>
+                </article>
+            </section>
+            <h2 class="sliderTitle" id="gameplay">Gameplay</h2>
+            <section>
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./sources/carrousel-img-1.jpg" alt="gameplay image 1">
+                        </li>
+                        <li class="slide">
+                            <img src="./sources/carrousel-img-2.jpg" alt="gameplay image 2">
+                        </li>
+                        <li class="slide">
+                            <img src="./sources/carrousel-img-3.jpg" alt="gameplay image 3">
+                        </li>
+                        <li class="slide">
+                            <img src="./sources/carrousel-img-4.jpg" alt="gameplay image 4">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Seccion habilidades -->
+            <h2 class="sliderTitle" id="habilidades">Habilidades</h2>
+            <div class="slider-wrap">
+                <div class="slider">
+                    <div class="slider-inner" data-scroll="skills">
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/capa-ala-de-polilla.png" height="66px"
+                                        alt="capa ala de polilla"></div>
+                                <article>
+                                    <p class="card_title">CAPA DE ALA DE POLILLA</p>
+                                    <p>Capa hecha de hebras de ala de polilla. Permite al portador realizar un Avance
+                                        Rápido
+                                        en el suelo o por el aire.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Presiona AVANCE RÁPIDO para avanzar rápidamente en una distancia corta en la
+                                    dirección en la
+                                    que el Caballero esté mirando. Puede ser usado en el aire. El tiempo de espera entre
+                                    avances
+                                    rápidos es de 0.6 segundos. Se recarga cuando el Caballero toca el suelo, recibe
+                                    daño, o
+                                    rebota sobre un enemigo/objeto con su Aguijón, o se desliza/salta de una pared
+                                    usando la Garra de mantis.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/garra-de-mantis.png" height="66px"
+                                        alt="garra de mantis"></div>
+                                <article>
+                                    <p class="card_title">GARRA DE MANTIS</p>
+                                    <p>Garra tallada a partir de hueso. Permite al portador colgarse en las paredes e
+                                        impulsarse desde ellas.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Mientras está cerca de una pared y está en el aire, presiona en la dirección de la
+                                    pared para aferrársele y comenzar a deslizarse hacia abajo. Presiona SALTAR para
+                                    lanzarse diagonalmente de la pared. Esto puede ser repetido una cantidad infinite de
+                                    veces,
+                                    permitiéndole a el Caballero poder trepar paredes. Sólo puede ser utilizado en
+                                    superficies
+                                    completamente verticales.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/corazon-de-cristal.png" height="66px"
+                                        alt="corazon de cristal"></div>
+                                <article>
+                                    <p class="card_title">CORAZON DE CRISTAL</p>
+                                    <p>Es posible canalizar la energía del cristal para lanzar al portador hacia delante
+                                        a
+                                        velocidades peligrosas.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Mantén oprimido SUPERAVANCE RÁPIDO mientras estes en el suelo o en una pared
+                                    utilizando
+                                    la Garra de mantis para concentrar la fuerza. Suelta el botón cuando la carga esté
+                                    completa
+                                    para volar en el aire hacia adelante. El Caballero continuará moviéndose hacia
+                                    adelante hasta
+                                    que sea interrumpido por el daño o el entorno, al oprimir SALTO o al oprimir
+                                    SUPERAVANCE RÁPIDO devuelta.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/lagrima-de-isma.png" height="78px"
+                                        alt="lagrima de isma"></div>
+                                <article>
+                                    <p class="card_title">LAGRIMA DE ISMA</p>
+                                    <p>Cuando se ingiere, proporciona protección frente a los abrasadores estanques
+                                        ácidos
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    La Lágrima de Isma es una Habilidad en Hollow Knight. Permite que el Caballero pueda
+                                    nadar en ácido sin recibir daño.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/capa-sombria.png" height="67px"
+                                        alt="capa sombria>"></div>
+                                <article>
+                                    <p class="card_title">CAPA SOMBRIA</p>
+                                    <p>Capa hecha de hebras de ala de polilla. Permite al portador realizar un Avance
+                                        Rápido
+                                        en el suelo o por el aire.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    La Capa Sombría es una Habilidad en Hollow Knight. Permite avanzar a través de
+                                    enemigos
+                                    y sus ataques, además de las Puertas Oscuras.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/aguijon-onirico.png" height="114px"
+                                        alt="aguijon onirico"></div>
+                                <article>
+                                    <p class="card_title">AGUIJON ONIRICO</p>
+                                    <p>Permite cortar el velo que separa el mundo onírico del real. Puede revelar sueños
+                                        ocultos o abrir puertas.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    El Aguijón Onírico es una Habilidad en Hollow Knight. Permite conseguir Esencia y
+                                    entrar a
+                                    los sueños.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/aguijon-onirico-despertado.png"
+                                        height="114px" alt="aguijon onirico despertado"></div>
+                                <article>
+                                    <p class="card_title">AGUIJON ONIRICO DESPERTADO</p>
+                                    <p>El Aguijón Onírico se ha despertado por completo y te permite acceder a
+                                        determinados
+                                        recuerdos protegidos.
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    El Aguijón Onírico es un arma sagrada y talisman, que puede cortar el velo que
+                                    separa el
+                                    mundo onírico del real. Parece haber sido creado por la Tribu Polilla.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/sentido del mundo.png" height="66px"
+                                        width="135.22" alt="sentido del mundo"></div>
+                                <article>
+                                    <p class="card_title">SENTIDO DEL MUNDO</p>
+                                    <p>Porcentaje de finalización visible en el Inventario.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Muestra el porcentaje de finalización en e inventario y en la selección de partida
+                                    en
+                                    el menú principal. También muestra el número de enemigos encontrados y requeridos en
+                                    el Diario del Cazador.
+                                </p>
+
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/portal onirico.png" height="72px"
+                                        width="72" alt="portal onirico"></div>
+                                <article>
+                                    <p class="card_title">PORTAL ONIRICO</p>
+                                    <p>Permite al portador viajar instantáneamente a través de los sueños.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Permite al Caballero abrir un Portal Onírico y volver a él desde cualquier sitio.
+                                    Sólo
+                                    puede haber un portal activo a la vez, poner uno nuevo hará desaparecer el anterior.
+                                    Teletransportarse consume 1 de Esencia. Un portal puede ser usado ilimitadamente
+                                    siempre que el jugador tenga Esencia.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="item" id="skillItem">
+                            <div class="card-front">
+                                <div class="card_img"><img src="./sources/skills/alas-de-monarca.png" height="64px"
+                                        width="72" alt="ala de monarca"></div>
+                                <article>
+                                    <p class="card_title">ALA DE MONARCA</p>
+                                    <p>Alas de materia etérea que centellean en la oscuridad. Permite al portador volver
+                                        a
+                                        saltar en el aire.</p>
+                                </article>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Oprime SALTO mientras estes en el aire para hacer un doble salto. Se puede volver a
+                                    utilizar una vez que el Caballero toque el suelo, reciba daño, rebote sobre un
+                                    enemigo/objeto con su Aguijón, o se desliza/salta de una pared usando la Garra de
+                                    mantis.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="prog-bar-inner" data-progres="skills"></div>
+                </div>
+            </div>
+            <!-- Seccion personajes no jugables -->
+            <h2 class="sliderTitle" id="personajes">Personajes</h2>
+            <div class="slider-wrap" id="npc">
+                <div class="slider">
+                    <div class="slider-inner" data-scroll="npcs">
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Cloth.png" alt="Cloth" />
+                                <figcaption>Cloth</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>Una cigarra que viaja a Hallownest para convertirse en una verdadera guerrera.
+                                    Toma al Caballero como inspiración. Sin embargo, aparece escondida bajo el
+                                    suelo en varias ocasiones debido a su cobardía.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Cornifer.png" alt="Cornifer" />
+                                <figcaption>Cornifer</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    El jugador se encuentra por primera vez a Cornifer en el fondo de Cruces Olvidados,
+                                    ahí le vende un mapa y le recomienda visitar la tienda de su esposa Iselda en
+                                    Bocasucia.
+                                    Cornifer se encuentra en todas las zonas donde es posible conseguir un mapa. Los
+                                    papeles
+                                    en el suelo y su tarareo revelan su posición.
+                                    Una vez que el jugador haya conseguido todos los mapas o derrotado a los 3
+                                    Soñadores,
+                                    aparecerá en su tienda durmiendo.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Hornet.png" alt="Hornet" />
+                                <figcaption>Hornet</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Es mencionado por Hornet que fue creada a través del mismo método que el Caballero,
+                                    dando a explicar en su totalidad el final "Hermanos sellados", así mismo explica que
+                                    ella no está vacía, cosa que los diferencia.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Señor_seta.png" alt="Señor seta" />
+                                <figcaption>Señor seta</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    El Señor Seta es una seta parlante que se encuentra a través de varios lugares en
+                                    Hallownest después de que el jugador ha progresado más allá de cierto punto. Sus
+                                    balbuceos se pueden escuchar desde lejos, guiando al jugador a su ubicación.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Quirrel.png" alt="Quirrel" />
+                                <figcaption>Quirrel</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Quirrel es uno de los principales NPCs de Hollow Knight, es un explorador que ha
+                                    olvidado su pasado de forma literal y ahora busca conocer los misterios de
+                                    Hallownest.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Tiso.png" alt="Tiso" />
+                                <figcaption>Tiso</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Tiso es un aventurero en busca del Coliseo de los Insensatos. Lucha presuntamente
+                                    con su
+                                    escudo, el cual según él, esconde una "sorpresa mortal".
+                                    Es muy arrogante, creyéndose el guerrero más poderoso y considerando al Caballero
+                                    por debajo
+                                    de él.
+                                </p>
+                            </div>
+                        </figure>
+                        <figure class="item">
+                            <div class="card-front">
+                                <img src="./sources/npcs/Zote_el_Todopoderoso.png" alt="Zote el todopoderoso" />
+                                <figcaption>Zote el todopoderoso</figcaption>
+                            </div>
+                            <div class="card-back">
+                                <p>
+                                    Zote es un viajero de las afueras de Hallownest. Él vino al reino para cumplir una
+                                    promesa;
+                                    después se revela que fue una promesa de gloria para sí mismo.
+                                </p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="prog-bar-inner" data-progres="npcs"></div>
+                </div>
+            </div>
+
+            <!-- Seccion historia -->
+            <h2 class="sliderTitle" id="historia">Historia</h2>
+            <br><br><br>
+            <section class="history-section">
+                <div class="left-section">
+                    <article id="history-card-1" class="history-card-content showContent">
+                        <div class="history-card-image">
+                            <img id="history-img-1" class="img-history slide-in" src="./sources/history-img.jpg"
+                                alt="knight image" width="60%">
+                        </div>
+                    </article>
+                    <article id="history-card-2" class="history-card-content">
+                        <div class="history-card-image">
+                            <img class="img-history slide-in" src="./sources/history-img-2.jpg" alt="knight image"
+                                width="60%">
+                        </div>
+                    </article>
+                    <article id="history-card-3" class="history-card-content">
+                        <div class="history-card-image">
+                            <img id="history-img-3" class="img-history slide-in" src="./sources/history-img-3.jpg"
+                                alt="knight image" width="60%">
+                        </div>
+                    </article>
+                </div>
+                <div class="right-section">
+                    <div id="history-text-1" class="history-text-content">
+                        <p id="history-paragraph-1" class="slide-in showContent">Antes del reino de Hallownest, había
+                            una criatura todopoderosa, EL Destello, que a través de
+                            su
+                            luz
+                            engendró a la tribu de las polillas. Entre todas, crearon el reino de Hallownest, un lugar
+                            para
+                            que
+                            los insectos pudieran pasar sus vidas. Pronto llegaron insectos de todo tipo.</p>
+                    </div>
+                    <div id="history-text-2" class="history-text-content">
+                        <p class="slide-in">La tribu de
+                            las
+                            Mantis, un pueblo guerrero o la tribu de las Abejas, una sociedad jerarquizada, eran de las
+                            muchas
+                            especies que llegaron al nuevo reino, y aunque respetaban a Destello como máxima autoridad,
+                            las
+                            Mantis tenian su propio gobierno, y las abejas se encerraron en su colmena, ajenas a todo lo
+                            que
+                            pasara en Hallownest.</p>
+                    </div>
+                    <div id="history-text-3" class="history-text-content">
+                        <p id="history-paragraph-3" class="slide-in">Todo era paz y armonía, o eso parecía...</p>
+                    </div>
+                </div>
+            </section>
+
+            <iframe src="https://www.youtube.com/embed/0GXyV9EvB_g" title="YouTube video player" id="trailer"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+        <footer>
+            <div class="fat-footer">
+                <div class="news">
+                    <b>Obten actualizaciones de tus juegos favoritos</b>
+                    <div class="first-section-footer">
+                        <p>Listo para explorar?</p>
+                        <button class="btn">Suscribite</button>
+                    </div>
+                    <div class="first-section-footer ps-footer">
+                        <p>Terminos & Condiciones</p>
+                        <p class="p-footer">Política de privacidad</p>
+                    </div>
+                </div>
+                <div>
+                    <b>Ranking</b>
+                    <p>Destacados</p>
+                    <p>Novedades</p>
+                    <p>Torneos</p>
+                    <p>Offline</p>
+                </div>
+                <div>
+                    <b>Servicios</b>
+                    <p>Nuestra tienda</p>
+                    <p>Novedades</p>
+                    <p>Suscripciones</p>
+                    <p>Offline</p>
+                </div>
+                <div>
+                    <b>Nosotros</b>
+                    <p>Beneficios</p>
+                    <p>Equipo</p>
+                    <p>Projectos</p>
+                </div>
+                <div>
+                    <b>Ayuda</b>
+                    <p>FAQs</p>
+                    <p>Contacto</p>
+                </div>
+            </div>
+            <div class="social-networks">
+                <img src="./sources/Icons/facebook-small-logo.png" alt="facebook logo" class="clic-item">
+                <img src="./sources/Icons/twitter-small-logo.png" alt="twitter logo" class="clic-item">
+                <img src="./sources/Icons/instagram-small-logo.png" alt="instagram logo" class="clic-item">
+            </div>
+            <p class="last-text-footer">Copyright 2022</p>
+        </footer>
+    </div>
+    <script src="js/loading.js"></script>
+    <script src="js/release.js"></script>
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>
