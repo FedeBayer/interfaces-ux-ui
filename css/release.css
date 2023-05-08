@@ -70,7 +70,6 @@ header nav a:hover {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     display: none;
-    overflow: hidden;
 }
 
 /*Posicion fija para que baje la imagen con el scroll y sin z-index para que quede como el fondo que mas atras esta (capa 0 del parallax)*/
@@ -223,6 +222,7 @@ article {
     line-height: 24px;
     letter-spacing: 0.5px;
 }
+
 
 #typeBArticle {
     margin: 0% 10% 0% 0%;
@@ -1157,7 +1157,6 @@ footer {
 .history-section {
     display: flex;
     flex-direction: row;
-    width: 100%;
     top: -90px;
     position: relative;
 }
