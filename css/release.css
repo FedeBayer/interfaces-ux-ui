@@ -70,6 +70,7 @@ header nav a:hover {
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
     display: none;
+    overflow: hidden;
 }
 
 /*Posicion fija para que baje la imagen con el scroll y sin z-index para que quede como el fondo que mas atras esta (capa 0 del parallax)*/
@@ -1224,6 +1225,7 @@ footer {
     animation: ease 0.9s fadeOut-history forwards;
     -webkit-animation: ease 0.9s fadeOut-history forwards;
 }
+
 /*Clase que asigna la animacion de aparicion*/
 .fade-in.appear {
     animation: ease 0.9s fadeIn-history forwards;
@@ -1233,6 +1235,7 @@ footer {
 .showCard {
     display: block;
 }
+
 /*Animacion aparicion seccion historia*/
 @keyframes fadeIn-history {
     0% {
@@ -1243,6 +1246,7 @@ footer {
         opacity: 1;
     }
 }
+
 /*Animacion desaparicion seccion historia*/
 @keyframes fadeOut-history {
     0% {
