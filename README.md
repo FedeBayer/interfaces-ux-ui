@@ -15,7 +15,7 @@ Home of the site with carousels of online games (free and paid games) divided by
 ### 4 in line game 
 [4 in line link](https://fedebayer.github.io/interfaces-ux-ui/game)
 
-Customizable (quantity of chips, 4, 5, 6 or 7 in line and chips images) and functions like reset and timer for each player turn, includes breadcrums.
+Page of 4 in line online game (done with OOP), Customizable (quantity of chips, 4, 5, 6 or 7 in line and chips images) and functions like reset and timer for each player turn, includes breadcrums.
 
 <img src="https://fedebayer.github.io/interfaces-ux-ui/sources/4-lines-img1.png" width="350" title="hollow knight page img">
 
