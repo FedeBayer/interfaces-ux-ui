@@ -39,7 +39,7 @@ class Chip {
       this.context.lineWidth = 1;
     }
 
-    this.context.fill();
+    if (!this.isSelected) this.context.fill();
     if (this.stroke) {
       this.context.stroke();
     }
